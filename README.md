@@ -19,7 +19,17 @@ RunPod-GUI is a user-friendly graphical user interface (GUI) for the `runpodctl`
 
 Before you begin, ensure that the `runpodctl.exe` file is placed in the same directory as the RunPod-GUI executable. If `runpodctl` is not installed on your system, the GUI will automatically handle the installation.
 
+## Building from Source
+
+If you're a developer and wish to build the project from the source code, follow these steps:
+
+1. Clone the repository: `git clone https://github.com/kodxana/RunPod-GUI.git`
+2. Navigate to the directory: `cd RunPod-GUI`
+3. Install the required dependencies:
+    - Go: Follow the instructions at https://golang.org/doc/install to install Go.
+    - Fyne: Run `go get fyne.io/fyne/v2` to install Fyne.
+4. Build the application: `go build -ldflags "-H windowsgui" main.go`
+
 ## Feedback
 
 If you have any issues or suggestions, please feel free to open an issue in this repository.
-
